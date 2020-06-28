@@ -1,0 +1,32 @@
+{
+  "name": "evoke",
+  "version": "1.0.0",
+  "description": "Library for creating and organizing html elements.",
+  "main": "src/evoke.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/brainjs/brain.js.git"
+  },
+  "keywords": [
+    "html",
+    "evoke",
+    "evoke.js",
+    "evoke-js",
+    "evokejs",
+    "javascript",
+    "frontend",
+    "front-end",
+    "js"
+  ],
+  "author": [
+    {
+      "name": "Bunny Eluvade",
+      "git": "https://github.com/Eluvade"
+    },
+    {
+      "name": "Zaharija",
+      "git": "https://github.com/zaharija"
+    }
+  ],
+  "license": "MIT"
+}
