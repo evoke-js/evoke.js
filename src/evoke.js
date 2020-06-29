@@ -23,6 +23,9 @@ export default class Evoke {
   static createContext(context) {
     contexts[context] = []
   }
+  static get contexts() {
+    return contexts
+  }
   static deleteContext(context) {
     for (let i = 0; i < contexts[context].length; i++) {
       contexts[context][i].remove()
