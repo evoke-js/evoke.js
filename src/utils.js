@@ -1,4 +1,4 @@
-export default utilAppendChild = (parent, parentElement, element) => {
+const utilAppendChild = (parent, parentElement, element) => {
   if (parent === 'body') {
     parentElement = document.body
     document.body.appendChild(element)
@@ -21,7 +21,7 @@ export default utilAppendChild = (parent, parentElement, element) => {
   }
 }
 
-export default utilSetContext = (context, contexts, element, parentElement) => {
+const utilSetContext = (context, contexts, element, parentElement) => {
   if (context) {
     if (!contexts[context]) {
       contexts[context] = []
@@ -50,13 +50,13 @@ export default utilSetContext = (context, contexts, element, parentElement) => {
   }
 }
 
-export default utilSetId = (element, id) => {
+const utilSetId = (element, id) => {
   if (id) {
     element.id = id
   }
 }
 
-export default utilSetClass = (element, classes) => {
+const utilSetClass = (element, classes) => {
   if (Object.prototype.toString.call(classes) === '[object String]') {
     element.classList.add(classes)
   } else if (Object.prototype.toString.call(classes) === '[object Array]') {
@@ -66,13 +66,13 @@ export default utilSetClass = (element, classes) => {
   }
 }
 
-export default utilSetText = (element, text) => {
+const utilSetText = (element, text) => {
   if (text) {
     element.textContent = text
   }
 }
 
-export default utilSetAtributes = (element, attributes) => {
+const utilSetAtributes = (element, attributes) => {
   if (attributes) {
     for (var attribute in attributes) {
       if (attributes.hasOwnProperty(attribute)) {
@@ -81,3 +81,6 @@ export default utilSetAtributes = (element, attributes) => {
     }
   }
 }
+
+
+export { utilAppendChild, utilSetContext, utilSetId, utilSetClass, utilSetText, utilSetAtributes }
