@@ -1,12 +1,12 @@
 {
   "name": "evoke.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Library for creating and organizing html elements.",
   "main": "src/evoke.js",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/brainjs/brain.js.git"
+    "url": "git+ssh://git@github.com/evoke-js/evoke.js.git"
   },
   "keywords": [
     "html",
