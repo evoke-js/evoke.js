@@ -1,5 +1,5 @@
 {
-  "name": "evoke",
+  "name": "evoke.js",
   "version": "1.0.0",
   "description": "Library for creating and organizing html elements.",
   "main": "src/evoke.js",
