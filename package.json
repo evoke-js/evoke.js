@@ -1,6 +1,6 @@
 {
   "name": "evoke.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Library for creating and organizing html elements.",
   "main": "src/evoke.js",
   "type": "module",
