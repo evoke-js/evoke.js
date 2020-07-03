@@ -4,8 +4,8 @@ Evoke is a lightweight JavaScript module for dynamic creation of html elements. 
 
 ## Installation
 
-* Use Evoke as a `<script>` tag from a [CDN](insertlinkhere)
-* Add Evoke package `npm i evoke.js` from [npm](https://www.npmjs.com/package/evoke.js)
+* Use Evoke as a `<script>` tag from a [CDN](https://unpkg.com/evoke.js/dist/evoke.min.js)
+* Add Evoke package `npm ci evoke.js --only=prod` from [npm](https://www.npmjs.com/package/evoke.js)
 
 ## Usage
 
@@ -27,7 +27,7 @@ The regular DOM syntax can still be used on elements that are created with evoke
 * `Evoke.update()` is work in progress.
 * `Evoke.delete(element)` deletes the element object.
 * `Evoke.createContext()` creates a new context.
-* `Evoke.deleteContexts()` deletes the desired context and the elements within it.
+* `Evoke.deleteContext()` deletes the desired context and the elements within it.
 * `Evoke.contexts` is the getter function to view all contexts.
 
 # The create function
@@ -52,15 +52,15 @@ The `undefined` value or omitting parameters will use Evoke's default settings /
 
 # Understanding Context
 
-Context is the way Evoke sorts the created html elements. Think of it as a connecting tag between a group of elements.
-A new context will be created by filling the context parameter when creating a new element. If the parameter is omitted, Evoke will deal with this for you.
-A new context can also be created with the `Evoke.createContext('contextName')` function which takes a string for it's parameter.
+Context is the way Evoke sorts the created html elements. Think of it as a connecting tag between a group of elements.  
+A new context will be created by filling the context parameter when creating a new element. If the parameter is omitted, Evoke will deal with this for you.  
+A new context can also be created with the `Evoke.createContext('contextName')` function which takes a string for it's parameter.  
 To delete all elements within a context use `Evoke.deleteContext('contextName')`
 
 # Contributing
 
-Evoke was originally written by [Zaharija](https://github.com/zaharija) and [Bunny Eluvade](https://github.com/Eluvade).
-Big thanks to all our other [contributors](https://github.com/your/project/contributors) who made this possible.
+Evoke was originally written by [Zaharija](https://github.com/zaharija) and [Bunny Eluvade](https://github.com/Eluvade).  
+Big thanks to all our other [contributors](https://github.com/evoke-js/evoke.js/contributors) who made this possible.  
 Keeping it simple and lightweight is the number 1 priority. Don't add any unnecessary libraries.
 
 # License
