@@ -5,7 +5,7 @@ Evoke is a lightweight JavaScript module for dynamic creation of html elements. 
 ## Installation
 
 * Use Evoke as a `<script>` tag from a [CDN](https://unpkg.com/evoke.js/dist/evoke.min.js)
-* Add Evoke package `npm ci evoke.js --only=prod` from [npm](https://www.npmjs.com/package/evoke.js)
+* Add Evoke package `npm i evoke.js --only=prod` from [npm](https://www.npmjs.com/package/evoke.js)
 
 ## Usage
 
@@ -48,7 +48,7 @@ create(elementType = 'div', parent = 'body', context = undefined, id = undefined
   ...
 }
 ```
-The `undefined` value or omitting parameters will use Evoke's default settings / parameters.
+The `undefined` value or omitting parameters will revert to Evoke's default settings / parameters.
 
 # Understanding Context
 
