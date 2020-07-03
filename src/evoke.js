@@ -1,4 +1,4 @@
-import { utilAppendChild, utilSetContext, utilSetId, utilSetClass, utilSetText, utilSetAtributes } from './utils.js'
+import { appendChild, setContext, setId, setClass, setText, setAtributes } from './utils.js'
 
 const contexts = {}
 
@@ -6,12 +6,12 @@ export default class Evoke {
   static create(elementType = 'div', parent = 'body', context = undefined, id = undefined, classes = undefined, text = undefined, attributes = undefined) {
     const element = document.createElement(elementType) // Create element (could be custom => different function)
     let parentElement
-    utilAppendChild(parent, parentElement, element)
-    utilSetContext(context, contexts, element, parentElement)
-    utilSetId(element, id)
-    utilSetClass(element, classes)
-    utilSetText(element, text)
-    utilSetAtributes(element, attributes)
+    appendChild(parent, parentElement, element)
+    setContext(context, contexts, element, parentElement)
+    setId(element, id)
+    setClass(element, classes)
+    setText(element, text)
+    setAtributes(element, attributes)
     return element
   }
   static update() {
